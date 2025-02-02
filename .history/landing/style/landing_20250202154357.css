@@ -1,0 +1,11 @@
+.container-landing {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(26, 26, 144, 1) 42%,
+    rgba(9, 9, 121, 1) 46%,
+    rgba(54, 162, 184, 1) 100%
+  );
+  height:;
+}
