@@ -14,6 +14,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #001830;
+  
 }
 .container-landing {
   background-image: url("../images/bg.jpg");
@@ -37,17 +38,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #001830a1;
-  padding: 20px;
+  background-color: #00183072;
+
 }
 
 .contain-btn h4 {
-  text-align: right;
-  direction: rtl;
+  max-height: 100px;
+  overflow: hidden;
 }
 .go-to-weather {
-  background-color: #a3cef1;
-  color: #00296b;
+  background-color: aliceblue;
   border: none;
   border-radius: 10px;
   padding: 20px 30px;
@@ -60,12 +60,21 @@ body {
   .contain-btn {
     width: 40%;
     text-align: right;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) translateX(300px);
-    align-items: end;
+    color: aliceblue;
   }
- 
+  .go-to-weather {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-family: vazir;
+    font-weight: bold;
+    font-size: medium;
+  }
   .container-landing {
     background-position: left;
     background-size: 40%;

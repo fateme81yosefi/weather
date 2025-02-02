@@ -1,0 +1,18 @@
+body {
+  margin: 0 !important;
+  padding: 0;
+  overflow: hidden;
+}
+.container-landing {
+  background-image: linear-gradient(
+    to right,
+    #141e30 0%,
+    #243b55 51%,
+    #141e30 100%
+  ),url();
+
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}

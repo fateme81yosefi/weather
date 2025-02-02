@@ -1,0 +1,21 @@
+body {
+  margin: 0 !important;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    #141e30 0%,
+    #243b55 51%,
+    #141e30 100%
+  );
+}
+.container-landing {
+  background-image: url("../images/bg.gif");
+
+  background-position: center; /* مرکز چینش */
+  background-size:40%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}

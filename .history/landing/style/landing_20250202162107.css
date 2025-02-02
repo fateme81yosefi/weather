@@ -1,0 +1,20 @@
+body {
+  margin: 0 !important;
+  padding: 0;
+  overflow: hidden;
+}
+.container-landing {
+    background-image: linear-gradient(
+        to right,
+        hsla(210, 40%, 15%, 0.1) 0%,  /* hsla برای رنگ اول با اپاسیتی 10% */
+        hsla(210, 40%, 30%, 0.1) 51%,  /* hsla برای رنگ دوم با اپاسیتی 10% */
+        hsla(210, 40%, 15%, 0.1) 100%  /* hsla برای رنگ سوم با اپاسیتی 10% */
+      ), url('../images/bg.gif');
+      
+      background-size: cover; /* پوشش کامل صفحه */
+      background-position: center; /* مرکز چینش */
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}

@@ -65,7 +65,10 @@ body {
     transform: translate(-50%, -50%) translateX(300px);
     align-items: end;
   }
- 
+  .go-to-weather {
+    font-weight: bold;
+    font-size: medium;
+  }
   .container-landing {
     background-position: left;
     background-size: 40%;

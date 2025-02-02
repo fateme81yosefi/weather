@@ -63,9 +63,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) translateX(300px);
+    color: aliceblue;
     align-items: end;
   }
- 
+  .go-to-weather {
+    background-color: #a3cef1;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-family: vazir;
+    font-weight: bold;
+    font-size: medium;
+  }
   .container-landing {
     background-position: left;
     background-size: 40%;
