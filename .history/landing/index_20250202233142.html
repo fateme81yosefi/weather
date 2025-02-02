@@ -28,21 +28,29 @@
 
   <script src="./js/landing.js"></script>
   <script>
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyDbVQgbFgmBga5ay3lg-AHRMzlgJ0s3R28",
-        authDomain: "weather-landing.firebaseapp.com",
-        projectId: "weather-landing",
-        storageBucket: "weather-landing.firebasestorage.app",
-        messagingSenderId: "952178783730",
-        appId: "1:952178783730:web:889c1497b65a320d4ee76b",
-        measurementId: "G-1NZ97GH544"
-    };
+    document.addEventListener('DOMContentLoaded', function () {
+      const loadEl = document.querySelector('#load');
 
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-</script>
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth',
+          'database',
+          'firestore',
+          'functions',
+          'messaging',
+          'storage',
+          'analytics',
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
 </body>
 
 </html>
