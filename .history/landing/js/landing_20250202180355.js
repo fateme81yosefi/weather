@@ -1,6 +1,8 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAG7OlH-SelRdCBDAnRHRzVAX3BZj6foLw",
   authDomain: "weather-937a3.firebaseapp.com",
@@ -11,7 +13,9 @@ const firebaseConfig = {
   measurementId: "G-FXKLXH2WV4"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+// Example to check Firebase connection (optional)
 console.log("Firebase Initialized Successfully");
