@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="./style/landing.css">
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
   <link rel="icon" href="https://icons.iconarchive.com/icons/dtafalonso/win-10x/512/Weather-icon.png" type="bild/icon-typ">
-  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js"></script>
 </head>
 
 <body>
@@ -27,22 +25,28 @@
 
 
   <script src="./js/landing.js"></script>
-  <script>
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyDbVQgbFgmBga5ay3lg-AHRMzlgJ0s3R28",
-        authDomain: "weather-landing.firebaseapp.com",
-        projectId: "weather-landing",
-        storageBucket: "weather-landing.firebasestorage.app",
-        messagingSenderId: "952178783730",
-        appId: "1:952178783730:web:889c1497b65a320d4ee76b",
-        measurementId: "G-1NZ97GH544"
-    };
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-</script>
-</body>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDKkdXNNFFa1-4FsQcjI8E_aZM8s8kmT_w",
+    authDomain: "weather-main-8dd19.firebaseapp.com",
+    projectId: "weather-main-8dd19",
+    storageBucket: "weather-main-8dd19.firebasestorage.app",
+    messagingSenderId: "910210359089",
+    appId: "1:910210359089:web:8a7302aeede7d1d900da10",
+    measurementId: "G-06BLT9BKE7"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script></body>
 
 </html>
