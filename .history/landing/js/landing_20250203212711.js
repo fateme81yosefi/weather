@@ -1,0 +1,18 @@
+
+function redirectBtn() {
+  window.location.href = "https://weather-data-3c3c5.web.app/";
+}
+
+const data = JSON.parse(localStorage.getItem('todayWeather'))
+
+if (weatherData) {
+  // نمایش داده‌ها در کنسول
+  console.log(weatherData);
+
+  // نمایش داده‌ها در HTML
+  document.getElementById('city').innerText = `شهر: ${weatherData.city}`;
+  document.getElementById('temperature').innerText = `دمای امروز: ${weatherData.temperature}°C`;
+  document.getElementById('condition').innerText = `وضعیت هوا: ${weatherData.condition}`;
+} else {
+  document.getElementById('weather-info').innerText = 'داده‌ای برای وضعیت هوا موجود نیست.';
+}
